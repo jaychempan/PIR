@@ -1,0 +1,51 @@
+############## The train & val & test set root ##############
+train_file:  ['data/finetune/rsicd_train.json']
+val_file: 'data/finetune/rsicd_val.json'
+test_file: 'data/finetune/rsicd_test.json'
+image_root: '../X-VLM-pytorch/images/rsicd/'
+
+############## Vision encoder setting ##############
+vision_config: 'configs/config_swinT_224.json'  # configs/config_swinT_224.json 'configs/config_swinB_224.json'
+resnet_ckpt: 'data/aid_28-rsp-resnet-50-ckpt.pth' # 'data/aid_28-rsp-resnet-50-ckpt.pth' or 'INS/aid_resnet50.pth'
+finetune_conv: False # whether fintue the conv encoder
+use_swin: True  # if use swin, using 'True'
+image_res: 224  # no need modify
+patch_size: 32   #if use swin, set the patch_size to 32, else 16
+
+############## Text encoder setting ##############
+text_config: 'configs/config_bert.json'
+text_encoder: 'data/bert-base-uncased'
+
+################ Training setting ################
+#== no need revise in general
+batch_size_train: 128
+batch_size_test: 128
+batch_size_test_text: 128
+max_tokens: 47
+embed_dim: 512
+temp1: 0.07
+temp2: 0.07
+k_test: 512
+is_baseline: False  # whether is baseline
+
+############## Other Settings ##############
+optimizer: {opt: adamW, lr: 6e-5, weight_decay: 0.01, lr_mult: 2}  # 3e-5 ana 6e-5 are all you need
+schedular: {sched: linear, lr: 6e-5, epochs: 50, num_warmup_steps: 0.1} # need to set the epoches, if needed, also lr
+
+################ Model setting  #######################################################################################
+#== 1. Representation Alignment, RA                                                                                 ####
+use_affil_loss: True # use affil loss
+use_triplet_loss: False
+center_factor: 1 # if use affil loss, set the center factor                                                      ####
+# indistinct_margin: 0.01                                                                                           ####
+                                                                                                                    ####
+#== 2. Vision Instruction Representation, VIR                                                                       ####
+filter_size: 40 # modify the filter size of vision instruction representation                                       ####
+instru_num: 2                                                                                                       #=##
+#== 3. Language Cycle Attention,  LCA                                                                               ####
+cycle_num: 3 # how many times of cycle attention                                                                    ####
+                                                                                                                    ####
+#== 4. the SA & CA parameter (include VIR and LCA Module)                                                           ####
+dropout_r: 0.2                                                                                                      #=##
+head: 8                                                                                                             #=##
+########################################################################################################################
