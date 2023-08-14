@@ -4,7 +4,7 @@
 
 
 
-Basic code to thank [[X-VLM]](https://github.com/zengyan-97/X-VLM) by Zeng et al.
+Basic code to thank [X-VLM](https://github.com/zengyan-97/X-VLM) by Zeng et al.
 
 ## Introduction
 
