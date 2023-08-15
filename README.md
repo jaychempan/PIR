@@ -1,8 +1,6 @@
 ## A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval
 
- [A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval](). **Jiancheng Pan**, Qing Ma, Cong Bai*. ACM MM 2023.
-
-
+ [A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval](). **Jiancheng Pan**, Qing Ma, Cong Bai*. **ACM MM 2023.**
 
 Basic code to thank [X-VLM](https://github.com/zengyan-97/X-VLM) by Zeng et al.
 
@@ -15,6 +13,40 @@ This paper presents a prior instruction representation framework (PIR) for remot
 
 
 ## Implementation
+
+The directory hierarchy is shown below, where the **checkpoints** and **data** files can be downloaded from here [[Baidu Disk]](https://pan.baidu.com/s/1aB-aSfD5h_PS6Ak_tt5RGA?pwd=tqv2) .
+
+```
+.
+├── checkpoints
+│   └── PIR
+│       ├── full_rsicd
+│       │   ├── checkpoint_49.pth
+│       │   ├── checkpoint_best.pth
+│       │   ├── config.yaml
+│       │   └── log.txt
+│       └── full_rsitmd
+│           ├── checkpoint_49.pth
+│           ├── checkpoint_best.pth
+│           ├── config.yaml
+│           └── log.txt
+├── configs
+│   ├── config_bert.json
+│   ├── config_swinT_224.json
+│   ├── Retrieval_rsicd.yaml
+│   └── Retrieval_rsitmd.yaml
+├── data
+├── dataset
+├── models
+├── utils
+├── mytools.py
+├── optim.py
+├── Pretrain.py
+├── Retrieval.py
+├── run.py
+├── scheduler.py
+└── requirements.txt
+```
 
 **Install**
 
@@ -45,8 +77,6 @@ All experiments are based on [RSITMD](https://github.com/xiaoyuan1996/AMFMN/tree
 ## Results
 
 ![image-20230814214836481](assets/image-20230814214836481.png)
-
-
 
 ## Citation
 
