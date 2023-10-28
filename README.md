@@ -1,6 +1,6 @@
 ## A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval
 
- [A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval](). **Jiancheng Pan**, Qing Ma, Cong Bai*. **ACM MM 2023.**
+ [A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval](https://dl.acm.org/doi/10.1145/3581783.3612374). **Jiancheng Pan**, Qing Ma, Cong Bai*. **ACM MM 2023.**
 
 Basic code to thank [X-VLM](https://github.com/zengyan-97/X-VLM) by Zeng et al.
 
@@ -83,5 +83,12 @@ All experiments are based on [RSITMD](https://github.com/xiaoyuan1996/AMFMN/tree
 If you find this code useful for your work or use it in your project, please consider citing:
 
 ```
---waiting--
+@inproceedings{pan2023aprior,
+author = {Pan, Jiancheng and Ma, Qing and Bai, Cong},
+title = {A Prior Instruction Representation Framework for Remote Sensing Image-Text Retrieval},
+year = {2023},
+doi = {10.1145/3581783.3612374},
+booktitle = {Proceedings of the 31st ACM International Conference on Multimedia},
+pages = {611–620},
+}
 ```
