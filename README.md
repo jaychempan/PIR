@@ -80,6 +80,9 @@ python run.py --task 'itr_rsicd' --dist "f2" --config 'configs/Retrieval_rsicd.y
 
 All experiments are based on [RSITMD](https://github.com/xiaoyuan1996/AMFMN/tree/master/RSITMD) and [RSICD](https://github.com/201528014227051/RSICD_optimal) datasets.
 
+you also can download the images form [Baidu Desk](https://pan.baidu.com/s/1mLkQA8InOxKjseGgEVoaew?pwd=c3c5), and correspondingly modify the `yaml` file under configs files as follows: `image_root: './images/datasets_name/'`
+
+
 ## 📊 Results
 
 ![image-20230814214836481](assets/image-20230814214836481.png)
