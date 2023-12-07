@@ -7,6 +7,18 @@ This repo is the official implementation of "[A Prior Instruction Representation
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-prior-instruction-representation-framework/cross-modal-retrieval-on-rsicd)](https://paperswithcode.com/sota/cross-modal-retrieval-on-rsicd?p=a-prior-instruction-representation-framework)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-prior-instruction-representation-framework/cross-modal-retrieval-on-rsitmd)](https://paperswithcode.com/sota/cross-modal-retrieval-on-rsitmd?p=a-prior-instruction-representation-framework)
 
+- [A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval (MM'23 Oral)](#a-prior-instruction-representation-framework-for-remote-sensing-image-text-retrieval-mm23-oral)
+  - [ℹ️ Introduction](#ℹ️-introduction)
+  - [🎯 Implementation](#-implementation)
+    - [Project Files](#project-files)
+    - [Environments](#environments)
+    - [Train](#train)
+    - [Test](#test)
+  - [🌎 Datasets](#-datasets)
+  - [📊 Results](#-results)
+  - [🙏 Acknowledgement](#-acknowledgement)
+  - [📝 Citation](#-citation)
+
 ## ℹ️ Introduction
 
 This paper presents a prior instruction representation framework (PIR) for remote sensing image-text retrieval, aimed at remote sensing vision-language understanding tasks to solve the semantic noise problem. Our highlight is the proposal of a paradigm that draws on prior knowledge to instruct adaptive learning of vision and text representations. Concretely, two progressive attention encoder (PAE) structures, Spatial-PAE and Temporal-PAE, are proposed to perform long-range dependency modeling to enhance key feature representation. In vision representation, Vision Instruction Representation (VIR) based on Spatial-PAE exploits the prior-guided knowledge of the remote sensing scene recognition by building a belief matrix to select key features for reducing the impact of semantic noise. In text representation, Language Cycle Attention (LCA) based on Temporal-PAE uses the previous time step to cyclically activate the current time step to enhance text representation capability. A cluster-wise affiliation loss is proposed to constrain the inter-classes and to reduce the semantic confusion zones in the common subspace. Comprehensive experiments demonstrate that using prior knowledge instruction could enhance vision and text representations and could outperform the state-of-the-art methods on two benchmark datasets, RSICD and RSITMD.
