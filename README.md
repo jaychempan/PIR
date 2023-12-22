@@ -3,7 +3,9 @@
 By [Jiancheng Pan](https://scholar.google.com/citations?user=nRPD3tAAAAAJ&hl=en&oi=ao), Qing Ma, [Cong Bai](https://scholar.google.com/citations?hl=zh-CN&user=XGZ4UZgAAAAJ&view_op=list_works&sortby=pubdate).
 
 This repo is the official implementation of "[A Prior Instruction Representation Framework for Remote Sensing Image-text Retrieval](https://dl.acm.org/doi/abs/10.1145/3591106.3592236)"(MM'23 Oral).
-	
+
+If you want to find more RSITR methods, you can click: https://github.com/jaychempan/Awesome-RSITR
+
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-prior-instruction-representation-framework/cross-modal-retrieval-on-rsicd)](https://paperswithcode.com/sota/cross-modal-retrieval-on-rsicd?p=a-prior-instruction-representation-framework)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-prior-instruction-representation-framework/cross-modal-retrieval-on-rsitmd)](https://paperswithcode.com/sota/cross-modal-retrieval-on-rsitmd?p=a-prior-instruction-representation-framework)
 
